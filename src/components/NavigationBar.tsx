@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { BsSearch } from "react-icons/bs";
 import { SlBag, SlHeart } from "react-icons/sl";
+import { MenuComponent } from "./MenuComponent";
 export const NavigationBar = () => {
   return (
     <div className="fixed top-0 flex w-full flex-col">
@@ -14,16 +15,28 @@ export const NavigationBar = () => {
             height={25}
             className="mx-[11px]"
           />
-          <div className="mt-[6px] flex items-center font-sans font-normal text-slate-700 hover:cursor-pointer">
-            <span className="mx-[11px] hover:underline hover:decoration-yellow-400 hover:decoration-4 hover:underline-offset-[15px]">
-              MEN
-            </span>
-            <span className="mx-[11px] hover:underline hover:decoration-yellow-400 hover:decoration-4 hover:underline-offset-[15px]">
-              WOMEN
-            </span>
-            <span className="mx-[11px] hover:underline hover:decoration-yellow-400 hover:decoration-4 hover:underline-offset-[15px]">
-              MOBILE COVERS
-            </span>
+          <div className="  mt-[6px] flex items-center font-sans font-normal text-slate-700 hover:cursor-pointer">
+            <div className="group relative">
+              <span className="mx-[11px] hover:underline hover:decoration-yellow-400 hover:decoration-4 hover:underline-offset-[13px]">
+                MEN
+              </span>
+              <MenuComponent />
+            </div>
+            
+            <div className="group relative">
+              <span className="mx-[11px] hover:underline hover:decoration-yellow-400 hover:decoration-4 hover:underline-offset-[13px]">
+                WOMEN
+              </span>
+              <MenuComponent />
+            </div>
+            
+            <div className="group relative">
+              <span className="mx-[11px] hover:underline hover:decoration-yellow-400 hover:decoration-4 hover:underline-offset-[13px]">
+                MOBILE COVERS
+              </span>
+              <MenuComponent />
+            </div>
+            
           </div>
         </div>
         <div className="flex items-center divide-x">
@@ -34,14 +47,14 @@ export const NavigationBar = () => {
             />
             <BsSearch className="absolute left-4 top-[50%] -translate-y-[50%]" />
           </div>
-          <div className="flex items-center gap-5 ml-4 mr-14">
+          <div className="ml-4 mr-14 flex items-center gap-5">
             <span>Login</span>
-            <SlHeart size={25}/>
-            <SlBag size={25}/>
+            <SlHeart size={25} />
+            <SlBag size={25} />
           </div>
         </div>
       </div>
-      <div className="flex justify-between py-4 px-24 font-sans text-lg font-[350] border-t-[1px] bg-red-200">
+      <div className="flex justify-between border-t-[1px] bg-red-100 px-24 py-4 font-sans text-lg font-[350]">
         <span>OOF SALE</span>
         <span>MEN</span>
         <span>WOMEN</span>
