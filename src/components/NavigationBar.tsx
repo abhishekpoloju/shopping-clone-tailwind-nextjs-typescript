@@ -20,7 +20,7 @@ export const NavigationBar = () => {
               <span className="mx-[11px] hover:underline hover:decoration-yellow-400 hover:decoration-4 hover:underline-offset-[13px]">
                 MEN
               </span>
-              <MenuComponent />
+              <MenuComponent/>
             </div>
             
             <div className="group relative">
