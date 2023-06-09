@@ -15,7 +15,7 @@ export const NavigationBar = () => {
             height={25}
             className="mx-[11px]"
           />
-          <div className="  mt-[6px] flex items-center font-sans font-normal text-slate-700 hover:cursor-pointer">
+          <div className="mt-[6px] flex items-center font-sans font-normal text-slate-700 hover:cursor-pointer">
             <div className="group relative">
               <span className="mx-[11px] hover:underline hover:decoration-yellow-400 hover:decoration-4 hover:underline-offset-[13px]">
                 MEN
